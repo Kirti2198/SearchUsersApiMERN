@@ -1,0 +1,30 @@
+.searchForm {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.SearchInput {
+  background-color: aliceblue;
+  height: 30px;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.UserCard {
+  height: 188px;
+  width: 250px;
+  background-color: #ffffff;
+  box-shadow: 0 0 9px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.UserCard:hover {
+  background-color: rgb(226, 226, 100);
+  cursor: pointer;
+}
+
+p {
+  text-align: center;
+  margin-top: 1px;
+}
