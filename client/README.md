@@ -25,3 +25,4 @@ For running it on the local System:
 6. After setting up both frontend and backend you can see the UI on the localhost:3000 on your browser
 
 7. Search User using by its name and ID
+
