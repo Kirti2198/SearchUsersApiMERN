@@ -1,13 +1,13 @@
 .searchForm {
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
+  margin-left: 650px;
 }
 
 .SearchInput {
   background-color: aliceblue;
   height: 30px;
-  width: 200px;
+  width: 300px;
   border-radius: 8px;
 }
 

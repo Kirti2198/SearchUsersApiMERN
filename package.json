@@ -4,13 +4,7 @@
   "description": "SearchBar users",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd client && npm start",
-    "install-client": "cd client && npm run build",
-    "heroku-postbuild": "npm run install-client && npm run build",
-    "start": "node server.js",
-    "client": "cd client && npm start",
-    "dev": "concurrently -n 'server,client' -c 'red,green'  \"nodemon server.js\" \"npm run client\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "Search",
