@@ -4,7 +4,7 @@ import './search.css';
 class Search extends React.Component {
   state = {
     query: "",
-    data: [],
+    // data: [],
     filteredData: []
   };
 
@@ -15,7 +15,8 @@ class Search extends React.Component {
       const filteredData = prevState.data.filter(element => {
         return element.name.toLowerCase().includes(query.toLowerCase());
       });
-
+       
+      console.log("FILTERDADATA",filteredData)
       return {
         query,
         filteredData
@@ -24,7 +25,7 @@ class Search extends React.Component {
   };
 
   getData = () => {
-    fetch('/users')
+    fetch('/users/')
       .then(response => response.json())
       .then(data => {
         const { query } = this.state;
@@ -50,7 +51,7 @@ class Search extends React.Component {
         <form>
           <input
             className="SearchInput"
-            placeholder="Search for Users by Name,Id,Address..."
+            placeholder="Search for Users by Name..."
             value={this.state.query}
             onChange={this.handleInputChange}
           />
